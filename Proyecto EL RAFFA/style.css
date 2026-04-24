@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  background-color: #000;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #222;
+}
+
+header h1 {
+  color: #ff6600;
+}
+
+nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ff6600;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 50px 20px 40px;
+  background: #000;
+}
+
+.logo {
+  width: 260px;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  margin-bottom: 8px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.hero-sub {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.btn-wp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25D366;
+  color: white;
+  padding: 13px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  transition: 0.3s;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.35);
+}
+
+.btn-wp:hover {
+  transform: scale(1.05);
+  background-color: #1ebe5d;
+}
+
+.wp-icon {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+
+/* MENU */
+.menu {
+  max-width: 580px;
+  margin: 40px auto;
+  padding: 0 16px 40px;
+}
+
+.menu-category {
+  background-color: #111;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 18px;
+  cursor: pointer;
+  background: #111;
+  border: none;
+  width: 100%;
+  color: white;
+  text-align: left;
+}
+
+.category-title {
+  color: #ff6600;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.category-sub {
+  color: #888;
+  font-size: 11px;
+  margin: 3px 0 0;
+}
+
+.chevron {
+  color: #ff6600;
+  font-size: 16px;
+  transition: transform 0.25s;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
+}
+
+.category-items {
+  border-top: 1px solid #222;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 18px;
+  border-bottom: 1px solid #1a1a1a;
+  font-size: 14px;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item span:first-child {
+  color: #ddd;
+}
+
+.item span:last-child {
+  color: #ff6600;
+  font-weight: bold;
+}
+
+/* GALERIA */
+.galeria {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+}
+
+.foto {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* CONTACTO */
+.contacto {
+  padding: 40px 20px;
+  background: #0a0a0a;
+  border-top: 1px solid #222;
+}
+
+.contacto h2 {
+  color: #ff6600;
+  margin-bottom: 16px;
+}
+
+.contacto p {
+  color: #aaa;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.contacto strong {
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  padding: 20px;
+  background-color: #111;
+  font-size: 13px;
+  color: #555;
+  border-top: 1px solid #1a1a1a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    display: flex;
+    gap: 12px;
+  }
+
+  .logo {
+    width: 200px;
+  }
+
+  .foto {
+    width: 90%;
+  }
+
+  /* DELIVERY */
+.delivery {
+  padding: 40px 20px;
+  background: #0a0a0a;
+  border-top: 1px solid #222;
+}
+
+.delivery h2 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.delivery-links {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.delivery-btn {
+  display: inline-block;
+  padding: 13px 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  transition: transform 0.2s;
+}
+
+.delivery-btn:hover {
+  transform: scale(1.05);
+}
+
+.pedidosya {
+  background-color: #FA3B59;
+  color: white;
+}
+
+.rappi {
+  background-color: #FF441F;
+  color: white;
+}

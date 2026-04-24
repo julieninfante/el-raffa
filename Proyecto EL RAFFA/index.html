@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Raffa</title>
+  <link rel="icon" href="icono.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>El Raffa</h1>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#menu">Menú</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <img src="logo.png" class="logo">
+  <h2>COMIDA CASERA AL MEJOR PRECIO</h2>
+  <p class="hero-sub">Quilmes · Pedidos a domicilio</p>
+  <a href="https://wa.me/5491131319919?text=Hola%20quiero%20hacer%20un%20pedido" target="_blank" class="btn-wp">
+    <svg class="wp-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.532 5.85L.05 23.5l5.79-1.468A11.956 11.956 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.848 0-3.577-.504-5.063-1.383l-.363-.215-3.434.871.9-3.347-.237-.374A9.955 9.955 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+    </svg>
+    Pedir por WhatsApp
+  </a>
+</section>
+
+<section class="menu" id="menu">
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Milanesas individuales</p>
+        <p class="category-sub">Con guarnición: papas fritas, puré o ensalada</p>
+      </div>
+      <span class="chevron open">▾</span>
+    </button>
+    <div class="category-items">
+      <div class="item"><span>Pollo</span><span>$10.000</span></div>
+      <div class="item"><span>Napolitana (pollo)</span><span>$13.000</span></div>
+      <div class="item"><span>Carne</span><span>$11.000</span></div>
+      <div class="item"><span>Napolitana (carne)</span><span>$14.000</span></div>
+      <div class="item"><span>Calabresa</span><span>$15.000</span></div>
+      <div class="item"><span>Barbacoa</span><span>$15.000</span></div>
+      <div class="item"><span>4 Quesos</span><span>$15.000</span></div>
+      <div class="item"><span>Campeona</span><span>$15.000</span></div>
+      <div class="item"><span>Princesa</span><span>$15.000</span></div>
+      <div class="item"><span>Cheddar y panceta</span><span>$15.000</span></div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Milanesas para compartir</p>
+        <p class="category-sub">Con guarnición: papas fritas, puré o ensalada</p>
+      </div>
+      <span class="chevron">▾</span>
+    </button>
+    <div class="category-items" style="display:none">
+      <div class="item"><span>Pollo</span><span>$13.000</span></div>
+      <div class="item"><span>Napolitana (pollo)</span><span>$16.000</span></div>
+      <div class="item"><span>Carne</span><span>$15.000</span></div>
+      <div class="item"><span>Napolitana (carne)</span><span>$18.000</span></div>
+      <div class="item"><span>Calabresa</span><span>$20.000</span></div>
+      <div class="item"><span>Barbacoa</span><span>$20.000</span></div>
+      <div class="item"><span>4 Quesos</span><span>$20.000</span></div>
+      <div class="item"><span>Campeona</span><span>$20.000</span></div>
+      <div class="item"><span>Princesa</span><span>$20.000</span></div>
+      <div class="item"><span>Cheddar y panceta</span><span>$20.000</span></div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Sandwiches</p>
+        <p class="category-sub">Todos con guarnición</p>
+      </div>
+      <span class="chevron">▾</span>
+    </button>
+    <div class="category-items" style="display:none">
+      <div class="item"><span>Bondiola</span><span>$13.000</span></div>
+      <div class="item"><span>Vacío</span><span>$15.000</span></div>
+      <div class="item"><span>Milanesa de pollo</span><span>$11.000</span></div>
+      <div class="item"><span>Milanesa de carne</span><span>$13.000</span></div>
+      <div class="item"><span>Completo pollo</span><span>$14.000</span></div>
+      <div class="item"><span>Completo carne</span><span>$16.000</span></div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Sandwiches XL</p>
+        <p class="category-sub">Todos con guarnición</p>
+      </div>
+      <span class="chevron">▾</span>
+    </button>
+    <div class="category-items" style="display:none">
+      <div class="item"><span>Bondiola</span><span>$18.000</span></div>
+      <div class="item"><span>Vacío</span><span>$20.000</span></div>
+      <div class="item"><span>Milanesa de pollo</span><span>$16.000</span></div>
+      <div class="item"><span>Milanesa de carne</span><span>$17.000</span></div>
+      <div class="item"><span>Completo pollo</span><span>$19.000</span></div>
+      <div class="item"><span>Completo carne</span><span>$20.000</span></div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Carnes al horno</p>
+        <p class="category-sub">Todas con guarnición</p>
+      </div>
+      <span class="chevron">▾</span>
+    </button>
+    <div class="category-items" style="display:none">
+      <div class="item"><span>Pata y muslo</span><span>$10.000</span></div>
+      <div class="item"><span>Bondiola</span><span>$17.000</span></div>
+      <div class="item"><span>Vacío</span><span>$22.000</span></div>
+      <div class="item"><span>Matambre a la pizza</span><span>$22.000</span></div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Hamburguesas</p>
+        <p class="category-sub">Todas con guarnición</p>
+      </div>
+      <span class="chevron">▾</span>
+    </button>
+    <div class="category-items" style="display:none">
+      <div class="item"><span>Clásica</span><span>$10.000</span></div>
+      <div class="item"><span>Cheddar</span><span>$14.000</span></div>
+      <div class="item"><span>Cheddar y panceta</span><span>$15.000</span></div>
+      <div class="item"><span>Doble cheddar</span><span>$16.000</span></div>
+      <div class="item"><span>Doble cheddar con panceta</span><span>$17.000</span></div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Pizzas</p>
+      </div>
+      <span class="chevron">▾</span>
+    </button>
+    <div class="category-items" style="display:none">
+      <div class="item"><span>Muzzarella</span><span>$15.000</span></div>
+      <div class="item"><span>Fugazza</span><span>$15.000</span></div>
+      <div class="item"><span>Napolitana</span><span>$17.000</span></div>
+      <div class="item"><span>Cuatro quesos</span><span>$19.000</span></div>
+      <div class="item"><span>Especial</span><span>$19.000</span></div>
+      <div class="item"><span>Calabresa</span><span>$19.000</span></div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Empanadas</p>
+        <p class="category-sub">Precio por unidad</p>
+      </div>
+      <span class="chevron">▾</span>
+    </button>
+    <div class="category-items" style="display:none">
+      <div class="item"><span>Carne</span><span>$2.500</span></div>
+      <div class="item"><span>Pollo</span><span>$2.500</span></div>
+      <div class="item"><span>Jamón y queso</span><span>$2.500</span></div>
+      <div class="item"><span>Carne frita</span><span>$2.500</span></div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Papas fritas y extras</p>
+      </div>
+      <span class="chevron">▾</span>
+    </button>
+    <div class="category-items" style="display:none">
+      <div class="item"><span>Papas medianas</span><span>$6.000</span></div>
+      <div class="item"><span>Papas grandes</span><span>$12.000</span></div>
+      <div class="item"><span>Huevos fritos</span><span>$500</span></div>
+      <div class="item"><span>Revuelto gramajo mediano</span><span>$10.000</span></div>
+      <div class="item"><span>Revuelto gramajo grande</span><span>$15.000</span></div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Ensaladas</p>
+      </div>
+      <span class="chevron">▾</span>
+    </button>
+    <div class="category-items" style="display:none">
+      <div class="item"><span>Ensalada a elección</span><span>$7.000</span></div>
+      <div class="item"><span>Ensalada mega</span><span>$15.000</span></div>
+      <div class="item"><span>Rusa 1/4</span><span>$6.000</span></div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Pastas</p>
+        <p class="category-sub">Salsas: estofado, bolognesa, mixta, fileto, crema</p>
+      </div>
+      <span class="chevron">▾</span>
+    </button>
+    <div class="category-items" style="display:none">
+      <div class="item"><span>Ñoquis</span><span>$13.000</span></div>
+      <div class="item"><span>Tallarines</span><span>$13.000</span></div>
+      <div class="item"><span>Ravioles</span><span>$17.000</span></div>
+      <div class="item"><span>Sorrentinos</span><span>$18.000</span></div>
+    </div>
+  </div>
+
+  <div class="menu-category">
+    <button class="category-header" onclick="toggle(this)">
+      <div>
+        <p class="category-title">Otros</p>
+      </div>
+      <span class="chevron">▾</span>
+    </button>
+    <div class="category-items" style="display:none">
+      <div class="item"><span>Filet de merluza c/guarnición</span><span>$13.000</span></div>
+      <div class="item"><span>Pechuga grillada c/guarnición</span><span>$13.000</span></div>
+      <div class="item"><span>Tortilla napolitana</span><span>$10.000</span></div>
+      <div class="item"><span>Tortilla</span><span>$7.000</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="galeria">
+  <img src="comida1.jpg" class="foto">
+  <img src="comida2.jpg" class="foto">
+  <img src="comida3.jpg" class="foto">
+</section>
+
+<section class="contacto" id="contacto">
+  <h2>Contacto</h2>
+  <p>📍 Quilmes, Buenos Aires</p>
+  <p>📱 Pedidos por WhatsApp al <strong>11 3131-9919</strong></p>
+</section>
+
+<section class="delivery">
+  <h2>También podés pedir por</h2>
+  <div class="delivery-links">
+    <a href="https://www.pedidosya.com.ar/restaurantes/quilmes/el-raffa-5526240c-95bc-47ae-936b-51352b20eb57-menu?origin=shop_list" target="_blank" class="delivery-btn pedidosya">
+      Pedidos Ya
+    </a>
+    <a href="https://www.rappi.com.ar/restaurantes/259856-el-raffa" target="_blank" class="delivery-btn rappi">
+      Rappi
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>© El Raffa — Todos los derechos reservados</p>
+</footer>
+
+<script>
+  function toggle(btn) {
+    const items = btn.nextElementSibling;
+    const chevron = btn.querySelector('.chevron');
+    const open = items.style.display !== 'none';
+    items.style.display = open ? 'none' : 'block';
+    chevron.classList.toggle('open', !open);
+  }
+</script>
+
+</body>
+</html>
